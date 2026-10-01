@@ -1,0 +1,28 @@
+:root{--bg:#f3f4f7;--panel:#fff;--ink:#1b2333;--mute:#5d6778;--line:#d8dde6;--acc:#2f5bea;--ok:#0f766e}
+@media (prefers-color-scheme:dark){:root{--bg:#10151f;--panel:#19202e;--ink:#e8ecf4;--mute:#9aa6bd;--line:#2c3649;--acc:#7c9cff;--ok:#4fd1c5}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:clamp(20px,5vw,28px);border-bottom:4px solid var(--acc);padding-bottom:8px;margin:0 0 6px}
+.tag{display:inline-block;font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 9px;vertical-align:middle}
+.tag.demo{color:var(--acc);border-color:var(--acc)}
+.lede{color:var(--mute);margin:0 0 18px}
+#gate{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px}
+label{display:block;font-size:13px;color:var(--mute);margin-bottom:10px}
+input,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:9px 10px;width:100%;margin-top:3px}
+.btn{background:var(--acc);color:#fff;border:0;border-radius:4px;padding:9px 18px;font-weight:600;cursor:pointer}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.note{font-size:13px;color:var(--mute);margin:10px 0 0}
+#thread{display:flex;flex-direction:column;gap:12px;margin-bottom:14px}
+.msg{border-radius:8px;padding:10px 14px;max-width:90%}
+.msg.user{align-self:flex-end;background:var(--acc);color:#fff}
+.msg.bot{align-self:flex-start;background:var(--panel);border:1px solid var(--line)}
+.msg.bot h3{margin:0 0 6px;font-size:14px}
+.msg.bot ol{margin:0 0 10px;padding-left:20px}
+.msg.bot .sops{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:4px}
+.msg.bot .sops a{color:var(--acc);text-decoration:none;font-weight:600}
+.msg.bot .sops a:hover{text-decoration:underline}
+.msg.bot .cat{color:var(--mute);font-weight:400;font-size:13px}
+#f{display:flex;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px}
+#f textarea{margin:0;resize:vertical}
+.foot{color:var(--mute);font-size:13px;margin-top:10px}
