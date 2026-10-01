@@ -28,3 +28,6 @@ Open `index.html` in a browser. No build step or dependencies.
 - `index.html`, `style.css`, `app.js` — the chat UI and retrieval logic
 - `sops.js` — demo SOP data (title, keywords, steps, link)
 - `sops/*.html` — demo SOP pages that the chat links to
+
+## Screenshot
+![screenshot](case-ai-assist.png)
